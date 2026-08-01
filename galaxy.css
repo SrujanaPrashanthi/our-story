@@ -707,6 +707,13 @@ body::before{
     background:rgba(3,7,18,.92);
 
     z-index:100;
+    min-height:100vh;
+
+    height:auto;
+
+    overflow-y:auto;
+
+    padding:30px 15px;
 
 }
 
@@ -808,6 +815,16 @@ body::before{
     background:rgba(3,7,18,.93);
 
     overflow:hidden;
+   
+    min-height:100vh;
+
+    height:auto;
+
+    overflow-y:auto;
+
+    padding:30px 15px;
+
+
 
 }
 
@@ -1316,6 +1333,186 @@ body::before{
     transform:scale(1.05);
 
     box-shadow:0 10px 25px rgba(56,189,248,.35);
+
+}
+/* ===============================
+        MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 768px){
+
+    /* Hero */
+
+    .glass{
+
+        width:90%;
+        padding:25px;
+
+    }
+
+    .glass h1{
+
+        font-size:32px;
+
+    }
+
+    .glass h3{
+
+        font-size:20px;
+
+    }
+
+    #typing{
+
+        font-size:16px;
+
+    }
+
+    /* Letter */
+
+    .letter-card{
+
+        width:92%;
+
+        padding:25px;
+
+    }
+
+    #letterTitle{
+
+        font-size:32px;
+
+    }
+
+    #letterText{
+
+        font-size:16px;
+
+        line-height:28px;
+
+    }
+
+    /* Gallery */
+
+    .photo-wall{
+
+        width:100%;
+
+        height:auto;
+
+        display:flex;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:20px;
+
+        padding:20px;
+
+    }
+
+    .photo-card{
+
+        position:static;
+
+        transform:none !important;
+
+    }
+
+    .photo-card img{
+
+        width:140px;
+
+        height:180px;
+
+    }
+
+    /* Popup */
+
+    .popup-card{
+
+        width:95%;
+
+        padding:20px;
+
+    }
+
+    .popup-card h2{
+
+        font-size:28px;
+
+    }
+
+    .popup-images{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .popup-images img{
+
+        width:180px;
+
+        height:220px;
+
+    }
+
+    #popupMessage{
+
+        font-size:16px;
+
+        line-height:26px;
+
+        max-height:220px;
+
+    }
+
+    .popup-buttons{
+
+        flex-direction:column;
+
+        gap:12px;
+
+    }
+
+    .popup-buttons button{
+
+        width:100%;
+
+    }
+
+    /* Final Page */
+
+    .final-card,
+
+    .last-card{
+
+        width:95%;
+
+        padding:25px;
+
+    }
+
+    .final-card h1,
+
+    .last-card h1{
+
+        font-size:32px;
+
+    }
+
+    .final-card p,
+
+    #lastMessage{
+
+        font-size:16px;
+
+        line-height:28px;
+
+    }
 
 }
 #letter,

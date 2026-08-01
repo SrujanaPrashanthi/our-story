@@ -1444,29 +1444,40 @@ body::before{
 
     }
 
-    .popup-images{
+   .popup-images{
 
-        flex-direction:column;
+    display:flex;
 
-        align-items:center;
+    flex-direction:row;
 
-    }
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
 
     .popup-images img{
 
-        width:180px;
+    width:95px;
 
-        height:220px;
+    height:125px;
 
-    }
+    object-fit:cover;
 
+    border-radius:10px;
+
+    border:3px solid white;
+
+}
     #popupMessage{
 
-        font-size:16px;
+        font-size:15px;
 
-        line-height:26px;
+        line-height:24px;
 
-        max-height:220px;
+        max-height:200px;
 
     }
 
